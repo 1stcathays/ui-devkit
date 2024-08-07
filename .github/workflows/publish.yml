@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  publish-gpr:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -29,13 +29,11 @@ jobs:
         with:
           node-version: 20
           cache: 'pnpm'
-          registry-url: https://npm.pkg.github.com/
-          scope: '@1stcathays'
 
       - name: Install dependencies
         run: pnpm install
 
-      - name: Publish packages
-        run: npm publish
+      - name: 'Version and publish'
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pnpm release
