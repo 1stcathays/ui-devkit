@@ -1,10 +1,6 @@
 {
   "name": "@1stcathays/eslint-config",
-<<<<<<< HEAD
-  "version": "0.0.2",
-=======
   "version": "0.0.0",
->>>>>>> bd811ff (fix: reverted version changes and changed publish registry)
   "description": "Shared ESlint configuration file for 1stCathays projects",
   "main": "index.js",
   "author": "Ahmed Hussein",
