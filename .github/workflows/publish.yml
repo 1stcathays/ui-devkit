@@ -33,6 +33,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Authenticate to registry
+        run: |
+          npm set @1stcathays:registry=https://npm.pkg.github.com/1stcathays
+          npm set "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}"
+
       - name: 'Version and publish'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
