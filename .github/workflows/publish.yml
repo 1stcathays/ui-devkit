@@ -40,7 +40,4 @@ jobs:
           git config user.name "1stcathays-bot"
           git config user.email "1stcathays-bot@users.noreply.github.com"
 
-          git branch -D main
-          git switch main
-
           pnpm release
