@@ -1,6 +1,10 @@
 {
   "name": "@1stcathays/prettier-config",
+<<<<<<< HEAD
   "version": "0.0.2",
+=======
+  "version": "0.0.0",
+>>>>>>> bd811ff (fix: reverted version changes and changed publish registry)
   "description": "Shared config for Prettier",
   "main": "index.js",
   "author": "Ahmed Hussein"
