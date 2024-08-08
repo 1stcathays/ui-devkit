@@ -1,6 +1,6 @@
 {
   "name": "@1stcathays/eslint-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Shared ESlint configuration file for 1stCathays projects",
   "main": "index.js",
   "author": "Ahmed Hussein",
