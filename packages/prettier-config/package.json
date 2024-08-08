@@ -1,6 +1,6 @@
 {
   "name": "@1stcathays/prettier-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Shared config for Prettier",
   "main": "index.js",
   "author": "Ahmed Hussein",
