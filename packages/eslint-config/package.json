@@ -1,9 +1,13 @@
 {
   "name": "@1stcathays/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Shared ESlint configuration file for 1stCathays projects",
   "main": "index.js",
   "author": "Ahmed Hussein",
+  "repository": "https://github.com/1stcathays/ui-devkit",
+  "publishConfig": {
+    "@1stcathays:registry": "https://npm.pkg.github.com/1stcathays"
+  },
   "peerDependencies": {
     "@remix-run/eslint-config": "^2.10.3",
     "@typescript-eslint/eslint-plugin": "^7.16.1",

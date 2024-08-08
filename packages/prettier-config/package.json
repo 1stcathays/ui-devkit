@@ -1,7 +1,11 @@
 {
   "name": "@1stcathays/prettier-config",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Shared config for Prettier",
   "main": "index.js",
-  "author": "Ahmed Hussein"
+  "author": "Ahmed Hussein",
+  "repository": "https://github.com/1stcathays/ui-devkit",
+  "publishConfig": {
+    "@1stcathays:registry": "https://npm.pkg.github.com/1stcathays"
+  }
 }
