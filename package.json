@@ -1,0 +1,44 @@
+{
+  "name": "@1stcathays/ui-devkit",
+  "private": true,
+  "description": "Tooling for UI projects",
+  "scripts": {
+    "lint": "run-p lint:*",
+    "lint:files": "eslint --output-file checkstyle.xml --format checkstyle .",
+    "lint:format": "prettier --check .",
+    "prepare": "husky install",
+    "prettier": "prettier --write .",
+    "release": "lerna publish --yes --no-commit-hooks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1stcathays/ui-devkit.git"
+  },
+  "author": "Ahmed Hussein",
+  "devDependencies": {
+    "@commitlint/cli": "^17.8.1",
+    "@commitlint/config-conventional": "^17.8.1",
+    "@1stcathays/prettier-config": "workspace:*",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^28.6.0",
+    "husky": "^9.1.1",
+    "lerna": "^8.1.7",
+    "lint-staged": "^15.2.7",
+    "nx": "^19.5.2",
+    "prettier": "^3.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": "@1stcathays/prettier-config",
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*/{js,css,md}": "prettier --write"
+  }
+}

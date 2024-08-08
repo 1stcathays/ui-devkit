@@ -1,0 +1,16 @@
+/.idea
+*.iml
+
+node_modules
+build
+dist
+coverage
+reports
+lib
+
+junit.xml
+checkstyle.xml
+
+.nx
+
+.eslintcache
